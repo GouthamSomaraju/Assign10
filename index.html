@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="day14.css">
+    <!-- <style> 
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .container {
+        display: grid;
+        margin-left: 30%;
+        /* height: 100vh; */
+        /* width: 600px; */
+        /* margin: auto; */
+        /* border: 1px solid black; */
+        /* position:relative ; */
+        /* background-image: url(../Assets/images/bg.jpeg); */
+        /* background-attachment: fixed; */
+      }
+      .header {
+        width: 600px;
+        height: 10vh;
+        background-color: #036055;
+        color: white;
+        display: flex;
+        cursor: pointer;
+        position: sticky;
+      }
+      .back {
+        /* size: 20%; */
+        height: 40px;
+        width: 40px;
+        padding: 7px;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 0px;
+        /* justify-content: center; */
+      }
+      .profile {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin: auto;
+        /* margin-top: 2px; */
+        margin-bottom: 3px;
+        margin-left: 10px;
+        /* margin-right: 10px; */
+      }
+      h2 {
+        padding: 10px;
+        font-size: 20px;
+        display: inline-block;
+      }
+      span {
+        font-size: 14px;
+        margin-left: 12px;
+        margin-bottom: 13px;
+      }
+      h2 {
+        margin: auto;
+        margin-left: 3px;
+      }
+      .video {
+        height: 45px;
+        width: 45px;
+        padding: 8px;
+        margin: auto;
+        margin-left: 210px;
+        margin-right: 10px;
+      }
+      .phone {
+        height: 40px;
+        width: 40px;
+        padding: 8px;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+      .dots {
+        height: 40px;
+        width: 40px;
+        padding: 8px;
+        margin: auto;
+        margin-left: 0px;
+        margin-right: 10px;
+      }
+      .chatbox {
+        width: 600px;
+        height: 80vh;
+        overflow-y: scroll;
+        background-image: url(../Assets/images/bg.jpeg);
+        background-attachment: fixed;
+      }
+      .chatbox .week{
+        position: sticky;
+      }
+      .week {
+        border-radius: 10px;
+        font-size: 15px;
+        position: sticky;
+        background-color: #ccc;
+        justify-content: center;
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+        /* padding: auto; */
+        max-width: fit-content;
+      }
+      .leftside {
+        max-width: 120px;
+        background: #f7fcf6;
+        padding: 10px;
+        border-radius: 10px;
+        padding-left: 5px;
+        margin: 20px 0px;
+        cursor: pointer;
+      }
+      .rightside {
+        max-width: 140px;
+        background: #e2ffc7;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px 0px;
+        cursor: pointer;
+        margin-left: 460px;
+        /* float: right; */
+        /* clear: left; */
+      }
+
+      .footer {
+        width: 600px;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        position: relative;
+        cursor: pointer;
+      }
+      
+      textarea {
+        display: block;
+        flex: 1;
+        width: 100%;
+        height: 50px;
+        border-radius: 60px;
+        margin: 5px;
+        padding: 10px;
+        outline: none;
+        font-size: 19px;
+        padding-left: 40px;
+        padding-right: 90px;
+        border: 2px solid #ccc;
+        color: #555;
+        resize: none;
+      }
+      .mic {
+        display: block;
+        width: 55px;
+        height: 55px;
+        margin-right: 20px;
+      }
+      .emo {
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 10px;
+        top: 12px;
+      }
+      .icons {
+        position: absolute;
+        right: 100px;
+        top: 10px;
+      }
+      .icons img {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+      }
+      
+    </style>-->
+  </head>
+  <body>
+    <div class="container" style="display: grid">
+      <div>
+        <div>
+          <div class="header">
+            <img src="./Assets/images/back.svg" alt="back" class="back" />
+            <img
+              src="./Assets/images/facebook-1-svgrepo-com.png"
+              alt="profile"
+              class="profile"
+            />
+            <div style="display: grid">
+              <h2>Facebook</h2>
+              <span>Online</span>
+            </div>
+            <img src="./Assets/images/video.png" alt="video" class="video" />
+            <img src="./Assets/images/phone.png" alt="phone" class="phone" />
+            <img src="./Assets/images/more.png" alt="more" class="dots" />
+          </div>
+        </div>
+      </div>
+      <div class="chatbox">
+        
+        <div class="chat">
+          <div class="sundaychat">
+          <h2 class="week">Sunday</h2>
+          <div class="leftside">
+            <p class="">hello sir</p>
+          </div>
+          <div class="rightside">
+            <p>hello</p>
+          </div>
+          <div class="leftside">
+            <p class="">how are you</p>
+          </div>
+          <div class="rightside">
+            <p>iam good</p>
+          </div>
+          <div class="leftside">
+            <p class="">where are you</p>
+          </div>
+          <div class="rightside">
+            <p>iam in the office</p>
+          </div>
+          <div class="leftside">
+            <p class="">what are you doing</p>
+          </div>
+          <div class="rightside">
+            <p>nothing</p>
+            <p>what are you doing</p>
+          </div>
+          <div class="leftside">
+            <p class="">nothing</p>
+          </div>
+          <div class="rightside">
+            <p>ohh</p>
+          </div>
+          <div class="leftside">
+            <p class="">how is your day</p>
+          </div>
+          <div class="rightside">
+            <p>not so bad</p>
+          </div>
+        </div>
+
+        <h2 class="week">Monday</h2>
+        <div class="mondaychat"></div>
+          <div class="leftside">
+            <p class="">hello sir</p>
+          </div>
+          <div class="rightside">
+            <p>hello</p>
+          </div>
+          <div class="leftside">
+            <p class="">how are you</p>
+          </div>
+          <div class="rightside">
+            <p>iam good</p>
+          </div>
+          <div class="leftside">
+            <p class="">where are you</p>
+          </div>
+          <div class="rightside">
+            <p>iam in the office</p>
+          </div>
+          <div class="leftside">
+            <p class="">what are you doing</p>
+          </div>
+          <div class="rightside">
+            <p>nothing</p>
+            <p>what are you doing</p>
+          </div>
+          <div class="leftside">
+            <p class="">nothing</p>
+          </div>
+          <div class="rightside">
+            <p>ohh</p>
+          </div>
+          <div class="leftside">
+            <p class="">how is your day</p>
+          </div>
+          <div class="rightside">
+            <p>not so bad</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <img src="./Assets/images/emo.png" alt="emoji" class="emo" />
+        <textarea placeholder="Type a message"></textarea>
+        <div class="icons">
+          <img src="./Assets/images/attach file.png" />
+          <img src="./Assets/images/camera.png" />
+        </div>
+        <img src="./Assets/images/mic.png" class="mic" />
+      </div>
+    </div>
+  </body>
+</html>
